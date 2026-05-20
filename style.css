@@ -165,13 +165,12 @@ nav li a {
     border-radius: 25px;
     font-family: 'Cormorant Garamond', serif;
     cursor: pointer;
-    transition: all ease-in 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    color: #f5eeee;
+    color: #faf6f0;
     background: #060606;
-    transform: translateY(6px);
 
 }
 
