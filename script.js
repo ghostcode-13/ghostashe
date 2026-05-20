@@ -40,3 +40,16 @@ window.addEventListener('load', () => {
     h1.classList.add('typing');
     setTimeout(typeWriter, 500);
 });
+
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const response = await fetch('https://formspree.io/f/xvzlndze', {
+        method: 'POST',
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+        this.reset();
+        document.getElementById('form-success').style.display = 'block';
+    }
+});
