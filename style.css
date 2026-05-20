@@ -166,13 +166,6 @@ nav li a {
     border-radius: 25px;
     font-family: 'Cormorant Garamond', serif;
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    color: #faf6f0;
-    background: #060606;
-
 }
 
 .hero-img {
